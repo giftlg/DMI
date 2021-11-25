@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.seva.aos">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <!--
+    The following permission is needed for automatically activate GPS
+    but this requires grant via ADB first.
+    -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/aos_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="ru.seva.aos.RingingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="MAPBOX_MAPID"
+            android:value="mapbox.satellite" />
+        <meta-data
+            android:name="MAPBOX_ACCESS_TOKEN"
+            android:value="pk.eyJ1Ijoic2V2YTIwMTgiLCJhIjoiY2pvMWoycW05MGI2ODNxbndiajg0b2QwdiJ9.yjG4fFhjetuFdalX3Mir0Q" />
+
+        <activity android:name="ru.seva.aos.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.seva.aos.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="ru.seva.aos.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <service
+            android:name="ru.seva.aos.NewGoogleGeo"
+            android:exported="false" />
+
+        <activity
+            android:name="ru.seva.aos.HistoryActivity"
+            android:label="@string/btn_hist_text" />
+        <activity
+            android:name="ru.seva.aos.OldReadSms"
+            android:label="@string/sms_open" />
+        <activity
+            android:name="ru.seva.aos.NewReadSms"
+            android:label="@string/sms_open" />
+        <activity
+            android:name="ru.seva.aos.HelpActivity"
+            android:label="@string/help_title" />
+
+        <receiver
+            android:name="ru.seva.aos.SmsReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ru.seva.aos.GpsSearch"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="ru.seva.aos.RemoteAdding"
+            android:exported="false" />
+        <service
+            android:name="ru.seva.aos.WifiSearch"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="ru.seva.aos.GpsCoordsReceived"
+            android:exported="false" />
+        <service
+            android:name="ru.seva.aos.Tracking"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name="ru.seva.aos.TrackStatus" />
+
+        <service
+            android:name="ru.seva.aos.TrackReceiveService"
+            android:exported="false" />
+    </application>
+
+</manifest>
