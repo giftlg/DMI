@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="ru.seva.aos">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -33,52 +34,56 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="ExtraText">
+        <activity
+            android:name=".Instructions"
+            android:exported="false" />
+
         <service
-            android:name="ru.seva.aos.RingingService"
+            android:name=".RingingService"
             android:enabled="true"
             android:exported="false" />
 
         <meta-data
             android:name="MAPBOX_MAPID"
             android:value="mapbox.satellite" />
+        //MAPBOX ACCESS TOKEN
         <meta-data
             android:name="MAPBOX_ACCESS_TOKEN"
-            android:value="pk.eyJ1Ijoic2V2YTIwMTgiLCJhIjoiY2pvMWoycW05MGI2ODNxbndiajg0b2QwdiJ9.yjG4fFhjetuFdalX3Mir0Q" />
+            android:value="sk.eyJ1IjoiZG1pZmluYWx5ZWFycHJvamVjdCIsImEiOiJja3dpeTVqdnQxY3d4MnBuczM1ajNuOXU2In0.uQZYsvU1FPalH5lvk6dEuA" />
 
-        <activity android:name="ru.seva.aos.MainActivity">
+        <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
         <activity
-            android:name="ru.seva.aos.SettingsActivity"
+            android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
         <activity
-            android:name="ru.seva.aos.MapsActivity"
+            android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
 
         <service
-            android:name="ru.seva.aos.NewGoogleGeo"
+            android:name=".NewGoogleGeo"
             android:exported="false" />
 
         <activity
-            android:name="ru.seva.aos.HistoryActivity"
+            android:name=".HistoryActivity"
             android:label="@string/btn_hist_text" />
         <activity
-            android:name="ru.seva.aos.OldReadSms"
+            android:name=".OldReadSms"
             android:label="@string/sms_open" />
         <activity
-            android:name="ru.seva.aos.NewReadSms"
+            android:name=".NewReadSms"
             android:label="@string/sms_open" />
-        <activity
-            android:name="ru.seva.aos.HelpActivity"
-            android:label="@string/help_title" />
 
         <receiver
-            android:name="ru.seva.aos.SmsReceiver"
+            android:name=".SmsReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BROADCAST_SMS">
@@ -88,28 +93,28 @@
         </receiver>
 
         <service
-            android:name="ru.seva.aos.GpsSearch"
+            android:name=".GpsSearch"
             android:enabled="true"
             android:exported="false" />
         <service
-            android:name="ru.seva.aos.RemoteAdding"
+            android:name=".RemoteAdding"
             android:exported="false" />
         <service
-            android:name="ru.seva.aos.WifiSearch"
+            android:name=".WifiSearch"
             android:enabled="true"
             android:exported="false" />
         <service
-            android:name="ru.seva.aos.GpsCoordsReceived"
+            android:name=".GpsCoordsReceived"
             android:exported="false" />
         <service
-            android:name="ru.seva.aos.Tracking"
+            android:name=".Tracking"
             android:enabled="true"
             android:exported="false" />
 
-        <activity android:name="ru.seva.aos.TrackStatus" />
+        <activity android:name=".TrackStatus" />
 
         <service
-            android:name="ru.seva.aos.TrackReceiveService"
+            android:name=".TrackReceiveService"
             android:exported="false" />
     </application>
 

@@ -98,10 +98,10 @@
     <string name="help_title">Help</string>
     <string name="check_settings">Check settings! Responding is enabled!</string>
     <string name="wifi_gps_warning">For locating by WiFi nets on Android 6 and newer, GPS must be enabled too! or setup auto activating GPS</string>
-    <string name="name_hint_text">Name of new number</string>
+    <string name="name_hint_text">Contact Name</string>
     <string name="name_text">Name:</string>
-    <string name="phone_text">New phone number:</string>
-    <string name="example_number">+71231234567</string>
+    <string name="phone_text">Number:</string>
+    <string name="example_number">ex: +265 000 0000</string>
     <string name="unknown_number">unknown (%1$s)</string>
     <string name="positive_add_button">Add</string>
     <string name="negative_add_button">Cancel</string>
@@ -149,6 +149,15 @@
     <string name="add_from_contacts_button">From contacts</string>
 
     <string name="ring_default_command" translatable="false">ring</string>
+    <string name="how_it_works" translatable="false">
+        The application will be installed in both the parent and child\'s phone and configured.
+        The application in the child\'s phone will listen to sms commands which will be sent by the parents
+        once an sms is received the application will search if the sms contains a command, if a command is recognised
+        the application will respond by processing the commands  and sending back the reply to the parent phone e.g location request
+
+
+
+    </string>
 
     <!--
     not translated to other languages, except Russian

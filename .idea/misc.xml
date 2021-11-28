@@ -3,7 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/drawable/dialog_about_shape.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/drawable/ic_splash_ico.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/drawable/round_background.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/drawable/text_area.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/activity_help.xml" value="0.2" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/activity_instructions.xml" value="0.33" />
         <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/activity_open_map.xml" value="0.2" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/add_menu.xml" value="0.5" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/splashfile.xml" value="0.25" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/tracking_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/menu/context_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/menu/history_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/xml/pref_general.xml" value="0.33" />
       </map>
     </option>
   </component>

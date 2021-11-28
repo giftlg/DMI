@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(DialogInterface dialog, int witch) {
                     switch(witch) {
                         case DialogInterface.BUTTON_POSITIVE:
-                            Intent intent = new Intent(getApplicationContext(), HelpActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), Instructions.class);
                             startActivity(intent);
                             break;
                         case DialogInterface.BUTTON_NEGATIVE:
@@ -749,7 +749,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void help_btn_clicked(View view) {
-        Intent intent = new Intent(this, HelpActivity.class);
+        Intent intent = new Intent(this, Instructions.class);
         startActivity(intent);
     }
 

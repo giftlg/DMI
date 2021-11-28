@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instructions">
+
+    <TextView
+        android:id="@+id/how_it_works"
+        android:layout_width="406dp"
+        android:layout_height="42dp"
+        android:background="@drawable/text_area"
+        android:gravity="center"
+        android:text="HOW IT WORKS"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B34EEAFF"
+        app:layout_constraintBottom_toBottomOf="@+id/how_it_works" />
+
+    <TextView
+        android:id="@+id/how_it_works_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:text="@string/how_it_works"
+        android:textSize="20sp"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B34EEAFF"
+        app:layout_constraintBottom_toBottomOf="@+id/configuration" />
+
+    <TextView
+        android:id="@+id/configuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/how_it_works_details"
+        android:text="HOW TO CONFIGURE "
+        android:gravity="center"
+        android:background="@drawable/text_area"
+        android:layout_marginTop="10dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
