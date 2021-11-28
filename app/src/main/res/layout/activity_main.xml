@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/login_background"
     android:orientation="vertical">
 
@@ -20,14 +22,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp">
 
-            <Button
-                android:background="@drawable/text_area"
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:onClick="add_number_btn"
-                android:text="@string/remember_int_on"
-                android:layout_span="2"/>
 
             <Button
                 android:id="@+id/help_button"
@@ -55,7 +49,6 @@
                 android:onClick="hist_btn_clicked"/>
 
             <Button
-                android:id="@+id/btn_sms"
                 android:layout_height="55dp"
                 android:text="@string/sms_open"
                 android:onClick="sms_btn_clicked"/>
@@ -84,46 +77,52 @@
 
     <TabHost
         android:id="@+id/tabHost"
-        android:layout_below="@id/progress"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="475dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </TabWidget>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="117dp">
+
                 <LinearLayout
                     android:id="@+id/tab_out"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"></TabWidget>
+
                     <TextView
                         style="@android:style/TextAppearance.DeviceDefault.Small"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="411dp"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:text="@string/phones_for_queries" />
 
                     <ListView
                         android:id="@+id/lvSendTo"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/tab_in"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
                     <TextView
                         style="@android:style/TextAppearance.DeviceDefault.Small"
                         android:layout_width="match_parent"
@@ -134,10 +133,11 @@
                     <ListView
                         android:id="@+id/lvReceiveFrom"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>
     </TabHost>
+
 </RelativeLayout>

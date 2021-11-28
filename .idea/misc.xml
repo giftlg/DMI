@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/drawable/ic_add_black_24dp.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_help.xml" value="0.221025641025641" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_history.xml" value="0.25" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_main__a.xml" value="0.18" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_new_read_sms.xml" value="0.25" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_old_read_sms.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_open_map.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/activity_track_status.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/add_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/layout/tracking_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/menu/context_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/menu/context_menu_trusted.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/menu/history_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/DMI/app/src/main/res/menu/history_track_menu.xml" value="0.2" />
         <entry key="..\:/Users/Gifts/Pictures/finalyearproject/Finder/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
