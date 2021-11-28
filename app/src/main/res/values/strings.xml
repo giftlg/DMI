@@ -155,6 +155,25 @@
         once an sms is received the application will search if the sms contains a command, if a command is recognised
         the application will respond by processing the commands  and sending back the reply to the parent phone e.g location request
 
+    </string>
+    <string name="how_to_configure_details" translatable="false">
+        Once installed open the application and from the child\s phone add the parents number by selecting on trusted  numbers
+        and pressing the add button. you can either choose to add contact from the phone contacts or add number manually
+        by entering the name and contact number with country code and the click add  navigate to setting and edit the command
+        according to your preference <b> NOTE:</b>  command should be simple and straight forward e.g <b>gs_search </b>with no spaces \n\n
+
+
+
+        similarly on the parents device the add the child\'s number under number for request once added the parent can
+        access different command by tapping the child number which the parent want to access
+
+
+    </string>
+
+    <string name="about_details" translatable="false">
+        Adolescent online safety is an android application which is based on the safety of children who use android devices
+        this application gives parents the ability to track and locate childrens whereabouts, it also enables parents to know
+        all the places where the child have been furthermore the parent can know track the chils in real time.
 
 
     </string>

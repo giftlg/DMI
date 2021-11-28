@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Instructions">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
 
     <TextView
         android:id="@+id/how_it_works"
@@ -23,22 +27,25 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#B34EEAFF"
+        android:background="#B36C6E6E"
         app:layout_constraintBottom_toBottomOf="@+id/how_it_works" />
 
     <TextView
         android:id="@+id/how_it_works_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/view"
         android:text="@string/how_it_works"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
     <View
         android:id="@+id/view1"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#B34EEAFF"
-        app:layout_constraintBottom_toBottomOf="@+id/configuration" />
+        android:background="#B36C6E6E"
+        app:layout_constraintTop_toBottomOf="@+id/configuration" />
 
     <TextView
         android:id="@+id/configuration"
@@ -53,4 +60,67 @@
         android:layout_marginTop="10dp"
         />
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/configuration_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_configure_details"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/About_App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/configuration_detail"
+        android:text="About App "
+        android:gravity="center"
+        android:background="@drawable/text_area"
+        android:layout_marginTop="10dp"/>
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#B36C6E6E"
+            app:layout_constraintTop_toBottomOf="@+id/About_App"
+             />
+
+        <TextView
+            android:id="@+id/About_App_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/About_App"
+            android:text="@string/about_details"
+            />
+
+
+        <TextView
+            android:id="@+id/Developers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintTop_toBottomOf="@+id/About_App_details"
+            android:text="DEVELOPERS :"
+            android:gravity="center"
+            android:background="@drawable/text_area"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/developers_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/Developers"
+            android:src="@drawable/developers"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -38,7 +38,8 @@
         tools:ignore="ExtraText">
         <activity
             android:name=".Instructions"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
 
         <service
             android:name=".RingingService"
@@ -63,10 +64,12 @@
         <activity android:name=".MainActivity"/>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".MainActivity"/>
 
         <service
             android:name=".NewGoogleGeo"
@@ -74,13 +77,16 @@
 
         <activity
             android:name=".HistoryActivity"
-            android:label="@string/btn_hist_text" />
+            android:label="@string/btn_hist_text"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".OldReadSms"
-            android:label="@string/sms_open" />
+            android:label="@string/sms_open"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".NewReadSms"
-            android:label="@string/sms_open" />
+            android:label="@string/sms_open"
+            android:parentActivityName=".MainActivity"/>
 
         <receiver
             android:name=".SmsReceiver"
@@ -111,7 +117,8 @@
             android:enabled="true"
             android:exported="false" />
 
-        <activity android:name=".TrackStatus" />
+        <activity android:name=".TrackStatus"
+            android:parentActivityName=".MainActivity"/>
 
         <service
             android:name=".TrackReceiveService"
