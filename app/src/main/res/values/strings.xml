@@ -190,4 +190,6 @@
     <string name="menu_start_ringing">Start ringing</string>
     <string name="no_mute_permission_warning">Ringing will not work, if device is in disturb mode</string>
     <string name="enable_background_miui">Please, enable \'No restrictions\' and \'allow background location\' for Finder</string>
+    <string name="todo">TODO</string>
+    <string name="adolescent_online_safety">ADOLESCENT ONLINE SAFETY</string>
 </resources>

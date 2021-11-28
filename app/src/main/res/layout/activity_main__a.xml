@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button"
+        android:layout_width="91dp"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="275dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/todo"
+        android:focusable="true"
+        android:scaleType="center"
+        app:backgroundTint="#FF9800"
+        app:elevation="8dp"
+        app:fabCustomSize="75dp"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:maxImageSize="48dp"
+        app:pressedTranslationZ="1dp"
+        app:src="@drawable/ic_add_black_24dp"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="131dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aos_logo_white_2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="687dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="@string/adolescent_online_safety"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#23FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="810dp"
+        android:text="Help"
+        android:textColor="#B3E5FC"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/help2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="810dp"
+        android:layout_toStartOf="@+id/help"
+        android:text="Settings"
+        android:textColor="#B3E5FC"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/help3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="809dp"
+        android:layout_toStartOf="@+id/help2"
+        android:text="History"
+        android:textColor="#B3E5FC"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_height="55dp"
+        android:onClick="sms_btn_clicked"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="606dp"
+        android:background="#FF9800"
+        android:fontFamily="@font/gotham_bold"
+        android:text="Open SMS"
+        android:textColor="#FFFFFF"
+        tools:ignore="TextContrastCheck"
+        android:layout_width="10dp"/>
+
+
+</RelativeLayout>
